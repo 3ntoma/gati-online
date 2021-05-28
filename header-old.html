@@ -1,0 +1,186 @@
+<header class="header-shadow">
+    <div class="header-container">
+      <!--МОБИЛЬНЫЙ НАВБАР-->
+      <ul class="nav-list nav-list-mobile">
+        <li class="nav-item">
+          <div class="mobile-menu">
+            <button type="button" class="navbar-toggle collapsed button-toggle" data-toggle="collapse" data-target="#navbar-main">
+              <span class="line line-top"></span>
+              <span class="line line-bottom"></span>
+             </button>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link nav-link-bag" ></a>
+        </li>
+      </ul>
+  
+  
+        <div>
+          <span class="logo" href="#">
+            <div class="logo-org">
+              <span class="logo-org">Государственная административно-техническая инспекция</span>
+              <span class="logo-org logo-org-small">Правительство Санкт-Петербурга</span>
+              <span class="name__mobile">ГАТИ</span>
+            </div>
+          </span>
+        </div>
+  
+      
+      
+      <div id="navbar-main">
+        <ul class="nav-list nav-list-larger">
+          <li class="nav-item">
+            <a id="drop1" class="nav-link" href="index.php">Главная</a>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a id="drop1" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Инспекция</a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=141&Itemid=167">Об Инспекции</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=140&Itemid=163">Полномочия, задачи, услуги и функции ГАТИ</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="https://www.gov.spb.ru/gov/otrasl/inspek/svedenija-o-rukovoditeljah/" target="_blank">Руководство Инспекции</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=143&Itemid=166">Обжалование Гос. услуг</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=144&Itemid=170">Кадры</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=1047&Itemid=170">Антимонопольное законодательство</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=145&Itemid=171">Гос. услуги, предоставляемые Инспекцией</a></li>
+              <li class="divider-new"></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=category&layout=blog&id=50&Itemid=183">Новости</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=category&layout=blog&id=49">Тексты официальных выступлений</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=category&layout=blog&id=51&Itemid=181">Мероприятия</a></li>
+              <? $user =&JFactory::getUser();
+              if (($user->username=='pressa'))
+              {
+              echo '<li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&layout=form">Создать Новость</a></li>';
+              echo '<li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=153">Авторизация</a></li>';
+              }
+              ?>
+              <li class="divider-new"></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_xmap&sitemap=1&Itemid=169">Карта Сайта</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="/index.php?option=com_content&view=article&id=64&Itemid=100"   role="button" >Методические материалы и образцы документов  </a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a id="drop1" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              Сервисы</a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=101&Itemid=128">Картографические сервисы</a></li>
+              <li class="divider-new"></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=100&Itemid=128">Адресные программы</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=101&Itemid=128">Ордера на работы</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=102&Itemid=128">Общий запрос</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=103&Itemid=128">Гарантийные адреса</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=104&Itemid=128">Административные нарушения</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=105&Itemid=128">Зимняя уборка</a></li>
+              <li class="divider-new"></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="http://xc.gati-online.ru/hs">Электронный кабинет подготовки и подачи документов</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="http://www.gati-online.ru/opendata">Открытые данные</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="http://xc.gati-online.ru/gpr/index.php">Система планирования и координации работ</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="http://xc.gati-online.ru/gpr/chart.php">Готовность к получению ордера</a></li>
+              <li class="divider-new"></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="http://gati-online.ru/docs/exc.exe">Приложение для создания подписи файлов</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="http://gati-online.ru/docs/PSPMerge.exe">Приложение для объединения PSP файлов</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=88&Itemid=140">Модуль формирования .PSP для AutoCad</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a id="drop1" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              Информирование</a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_quickfaq&view=category&cid=1&Itemid=114">Информация ГАТИ об ограничениях движения</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_quickfaq&view=category&cid=2&Itemid=184">Ограничения движения на КАД</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=1384">Ограничения движения в рамках содержания а/д</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=132&Itemid=83">Перечень рассматриваемых административных дел</a></li>
+              <li class="divider-new"></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=226&Itemid=146">	Общественное обсуждение проектов документов стратегического планирования Санкт-Петербурга</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=116&Itemid=146">Проекты НПА и административных регламентов</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=455&Itemid=201">Законодательство</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=1100&Itemid=201">Общественный совет при Инспекции</a></li>
+              <li class="divider-new"></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="docs/reg258.pdf">Реквизиты</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=117&Itemid=136">Семинары. Материалы</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=120&Itemid=137">Соглашения о Межведомственном взаимодействии</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=342&Itemid=139">Описание формата паспорта проекта (.PSP)</a></li>
+              <!--<li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=88&Itemid=140">Модуль формирования .PSP для AutoCad</a></li>-->
+              <!--<li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=134&Itemid=155">DWG файлы кадастровых зон в координатах МСК-64</a></li>-->
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=325&Itemid=196">Взаимодействие при присоединении к энергосетям</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=271&Itemid=199">Взаимодействие при присоединении к инженерным сетям</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a id="drop1" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              Гос. услуги</a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=136&Itemid=157">Банк планируемых работ</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=139&Itemid=187">Оперативная адресная программа на 1-й Кв. 2021 г</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=94&Itemid=187">Оперативная адресная программа на 4-й Кв. 2020 г</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=50&Itemid=120">Система мониторинга</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=82&Itemid=172">Перспективная адресная программа на 2020-2022 г.г</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=365&Itemid=172">Проект ПАП на 2021-2023 г.г</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="/docs/reg321.pdf">Памятка</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="/monitoring_ap.xls">Мониторинг Исполнения Адресных Программ</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=122&Itemid=143">Система планирования и координации работ</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="/GOD2020.pdf">График ограничения движения транспортных<br>средств при производстве работ в 2020 году</a></li>
+              <li class="divider-new"></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=68&Itemid=93">Перечень действующих ордеров</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=87&Itemid=119">Архив Ордеров ГАТИ</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=135&Itemid=156">Список ордеров ГАТИ выданных за неделю</a></li>
+              <li class="divider-new"></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=76&Itemid=63">Ограничение движения на карте города</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="index.php?option=com_content&view=article&id=70&Itemid=64">Список распоряжений об ограничении движения</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a id="drop1" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              Контрольно-надзорная деятельность</a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li class="dropdown-item"><a class="dropdown-link" href="https://www.gov.spb.ru/gov/otrasl/inspek/kontrolno-nadzornaya-deyatelnost/">Контрольно-надзорная деятельность</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="https://www.gov.spb.ru/gov/otrasl/inspek/kontrolno-nadzornaya-deyatelnost/perechen-obyazatelnyh-trebovanij/">Перечень обязательных требований</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="https://www.gov.spb.ru/gov/otrasl/inspek/kontrolno-nadzornaya-deyatelnost/risk-orientirovannyj-podhod/">Риск-ориентированный подход</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="https://www.gov.spb.ru/gov/otrasl/inspek/kontrolno-nadzornaya-deyatelnost/plan-proverok/">План проверок</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="https://www.gov.spb.ru/gov/otrasl/inspek/kontrolno-nadzornaya-deyatelnost/check_result/">Результаты проверок</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="https://www.gov.spb.ru/gov/otrasl/inspek/kontrolno-nadzornaya-deyatelnost/publichnye-meropriyatiya/">Публичные мероприятия по обсуждению правоприменительной практики</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="http://gov.spb.ru/gov/otrasl/inspek/kontrolno-nadzornaya-deyatelnost/informacionnye-materialy/">Информационные материалы и профилактика нарушений обязательных требований</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="http://gov.spb.ru/gov/otrasl/inspek/statistic/svedeniya-ob-ispolzovanii-byudzheta/" target="_blank">Сведения об использовании бюджета</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="docs/anketa.docx" target="_blank">Анкета для проведения опроса</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="https://www.gov.spb.ru/gov/otrasl/inspek/kontrolno-nadzornaya-deyatelnost/informacionnye-materialy/programma-po-profilaktike-narushenij-obyazatelnyh-trebovanij-zakonodat/" target="_blank">Программа по профилактике нарушений обязательных требований законодательства</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="https://www.gov.spb.ru/gov/otrasl/inspek/kontrolno-nadzornaya-deyatelnost/informacionnye-materialy/obobshenie-praktik-osushestvleniya-vidov-gkn/" target="_blank">Обобщение практик осуществления видов ГКН</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="https://www.gov.spb.ru/gov/otrasl/inspek/kontrolno-nadzornaya-deyatelnost/informacionnye-materialy/rukovodstvo-po-soblyudeniyu-obyazatelnyh-trebovanij/" target="_blank">Руководство по соблюдению обязательных требований</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="docs/reg173.pdf" target="_blank">Наиболее частые случаи нарушений</a></li>
+              <li class="dropdown-item"><a class="dropdown-link" href="docs/reg263.pdf" target="_blank">Сведения об организациях, осуществляющих уборку внутриквартальных территорий в 2020 году</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="dropdown show">
+          <!-- 
+          <ul class="nav-list nav-list-larger">
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Версия для слабовидящих</a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li class="dropdown-item"><a class="dropdown-link" href="#"> <img alt="Увеличить" title="Увеличить" src='images/+.png' onclick="zoompl();return false;" style="width: 50px; height: 50px;" /></a></li>
+                <li class="dropdown-item"><a class="dropdown-link" href="#"><img alt="Уменьшить" title="Уменьшить" src='images/m.png' onclick="zoommn();return false;" style="width: 50px; height: 50px;"/></a></li>
+                <li class="dropdown-item"><a class="dropdown-link" href="#"><img alt="Изменить контрастность" title="Изменить контрастность" src='images/n.png' onclick="gray();return false;" style="width: 50px; height: 50px;"/></a></li>
+                <li class="dropdown-item"><a class="dropdown-link" href="#"><img alt="Сбросить все" title="Сбросить все" src='images/r.png' onclick="reset();return false;" style="width: 50px; height: 50px;"/></a></li>
+              </ul>
+            </li>
+          </ul>--> 
+          <a class="visually_impaired dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="logo-visual">
+              <span><u>для слабовидящих</u></span>
+            </div>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right visual" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" onclick="zoompl();return false;">Увеличить текст</a>
+            <a class="dropdown-item" onclick="zoommn();return false;">Уменьшить текст</a>
+            <a class="dropdown-item" onclick="gray();return false;">Изменить контрастность</a>
+            <a class="dropdown-item" onclick="reset();return false;">Сбросить все</a>
+          </div>
+      </div>
+  
+    </div>
+  </header>button-toggle
