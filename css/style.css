@@ -8,7 +8,7 @@
 }
 .link_active a{
     font-weight: bold;
-    color: #3462f2;
+    color: black;
 }
 .link_active:hover a{
     font-weight: bolder !important;
@@ -51,6 +51,7 @@ a:hover {
 }
 header{
     width: 100%;
+    height: 65px;
     padding-top: 0px;
 }
 img{
@@ -72,7 +73,7 @@ h1, h2, h4{
     font-family: Manpore_font;
 }
 :root{
-    --global-nav-main-height: 71px;
+    --global-nav-main-height: 65px;
     --global-nav-collective-height: calc(3rem + var(--global-nav-main-height));
 }
 main{
@@ -80,31 +81,9 @@ main{
 }
 
 /*------------------BLOCK LOGO GATI------------*/
-.logo-org {
-    display: block;
-    font-size: 1.6rem;
-    font-weight: 600;
-    letter-spacing: .02em;
-    color: #000;
-    font-family: Manpore_font !important;
-}
-.logo-org-small {
-    font-size: 1.5rem;
-    font-weight: 500;
-    letter-spacing: .02em;
-    font-family: Manpore_font !important;
-}
-.logo {
-    background: url("../img/icons/logo-adm.png") no-repeat left center;
-	max-width: 100%;
-    min-width: 20%;
-    min-height: var(--global-nav-main-height);
-    padding-left: 7rem;
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-    line-height: 1.2;
-    margin-right: 1rem;
+.logo img{
+    max-height: 65px;
+    object-fit: contain;
 }
 /*------------- BLOCK VISUAL IMPAIRED ---------------*/
 .visually_impaired{
@@ -116,8 +95,7 @@ main{
 }
 .logo-visual{
     padding: 10px 0;
-    margin: 10px 0px 0px 10px;
-    height: auto;
+    max-height: 65px;
 }
 .logo-visual span{
     font-size: 1.4rem;
@@ -132,13 +110,6 @@ a.visually_impaired:hover span{
 }
 a.visually_impaired:focus{
     text-decoration: none;
-}
-.block__logo{
-    margin-right: 2rem;
-}
-.block__visual{
-    margin-left: 1rem;
-    min-height: var(--global-nav-main-height);
 }
 
 /*-------------------DROPDOWN-----------------*/
@@ -204,31 +175,29 @@ a.dropdown-item{
 }
 .header__container{
     max-width: 1840px;
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     padding: 0;
     align-items: center;
     justify-content: space-between;
-    max-height: 71px;
+    height: 100%;
 }
-.header__logo{
-    border-radius: 50%;
-    background-color:rgb(228, 29, 29);
-    position: relative;
-    z-index: 5;
-    width: 40px;
-    height: 40px;
+.menu__body{
+    height: auto;
 }
 .menu__icon{
     display: none;
 }
 .menu__list > li {
     position: relative;
-    margin: 10px 0px 0px 10px;
+    margin: 0px 0px 0px 10px;
+}
+.menu__list li:first-child{
+    margin: 0;
 }
 .menu__link{
     font-weight: 500;
-	font-size: 1.4rem;
+	font-size: 14px;
 	color: #1d1d1f;
     padding: 1rem !important;
     white-space: nowrap;
@@ -297,9 +266,6 @@ body._pc .menu__list > li:hover .menu__sub-list {
     transform: translate(0px, 0px);
     pointer-events: all;
 }
-body._touch .menu__body{
-    margin-right: 3rem;
-}
 body._touch .block__visual{
     display: none;
 }
@@ -309,13 +275,9 @@ body._touch .menu__list > li{
 }
 body._touch .menu__arrow{
     display: block;
-    width: 0;
-    height: 0;
-    margin: 0px 0px 0px 5px;
-    transition: transform 0.3s ease 0s;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 10px solid black;
+    background: url("../img/icons/arrow_down.svg");
+    width: 5px;
+    height: 5px;
 }
 body._touch .menu__sub-list{
     min-width: auto;
@@ -341,9 +303,6 @@ body._touch .menu__list > li._active .menu__sub-list li:last-child{
 }
 body._touch .menu__list > li._active .menu__arrow{
     transform: rotate(-180deg);
-}
-body._touch .block__visual{
-    display: none;
 }
 
 /*--------------------MAIN CONTAINER-----------------*/
