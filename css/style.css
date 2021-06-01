@@ -74,7 +74,7 @@ h1, h2, h4{
 }
 :root{
     --global-nav-main-height: 65px;
-    --global-nav-collective-height: calc(3rem + var(--global-nav-main-height));
+    --global-nav-collective-height: calc(45px + var(--global-nav-main-height));
 }
 main{
     padding-top: var(--global-nav-collective-height);
@@ -156,7 +156,6 @@ a.dropdown-item{
 .divider-new{
     border-bottom: 1px solid rgb(0,0,0,0.1);
 }
-
 
 /*------------------------------- HEADER ----------------------------- */
 .header{
@@ -488,7 +487,7 @@ div.clearfix p{
 .banner-content{
     height: 90px;
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 60px;
 }
 .sliderban .slick-list{
     border-radius: 10px;
@@ -514,7 +513,7 @@ div.clearfix p{
 /*------------------- SUPPORT SECTION ---------------------------- */
 .support-section {
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 60px;
     background-color: #ffffff;
 }
 .support-container{
@@ -593,27 +592,6 @@ div.clearfix p{
     filter: grayscale(0);
 }
 /*------------------------ FOOOOOTER ----------------*/
-.footer-content{
-    width: 100% !important;
-    margin-top: 3rem;
-    color: #000;
-}
-div.footer-container{
-    max-width: 100%;
-    margin-right: 4rem !important;
-    margin-left: 5rem !important;
-    margin-bottom: 2rem;
-}
-div.footer-top h4{
-    font-size: 16px;
-}
-.footer-top{
-    font-size: 13px;
-    font-weight: 300;
-    line-height: normal;
-    letter-spacing: .008em;
-    color: #1d1d1f;
-}
 .footer-menu-ul {
     line-height: 2rem;
 }
@@ -639,7 +617,7 @@ div.footer-top h4{
 }
 .footer-bottom-content {
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 60px;
     padding: 10px 0 0 0;
     border-top: 1px solid rgba(198,202,215,.3);
     text-align: left;

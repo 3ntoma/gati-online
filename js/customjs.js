@@ -1,11 +1,6 @@
-/*const selectElement = (element) => document.querySelector(element);
-
-selectElement('.button-toggle').addEventListener('click', () => {
-	selectElement('header').classList.toggle('active');
-});*/
 
 $(document).ready(function(){
-  $('.sliderban').slick({
+  $(".sliderban").not('.slick-initialized').slick({
 	dots: false,
 	arrows: false,
 	infinite: true,
@@ -21,7 +16,7 @@ $(document).ready(function(){
 	pauseOnHover: false,
 	pauseOnFocus: false
   });
-  $('.sliderban_1').slick({
+  $(".sliderban_1").not('.slick-initialized').slick({
 	dots: true,
 	arrows: true,
 	infinite: true,
@@ -38,7 +33,7 @@ $(document).ready(function(){
 	pauseOnHover: true,
 	pauseOnFocus: false
   });
-  $('.sliderban_1.slide_two').slick({
+  $(".slide_two").not('.slick-initialized').slick({
 	dots: true,
 	arrows: true,
 	infinite: true,
@@ -55,15 +50,16 @@ $(document).ready(function(){
 	pauseOnHover: true,
 	pauseOnFocus: false
   });
+  window.onresize= function(){
+		if ($(window).width() < 768) {
+			let full_height = Number($(window).height());
+			full_height += 200;
+			$('.menu__body')[0].style.height = String(full_height) + 'px';
+		}
+		mobileCheck();
+	}
 });
 
-window.onresize= function(){
-	if ($(window).width() < 768) {
-		let full_height = Number($(window).height());
-		full_height += 200;
-		$('.menu__body')[0].style.height = String(full_height) + 'px';
-	}
-}
 
 var zoom=1;//Шаг
 function zoompl(){
@@ -171,9 +167,6 @@ function mobileCheck(){
 	}
 }
 window.onload = mobileCheck();
-window.addEventListener(`resize`, event => {
-	mobileCheck();
-  }, false);
 
 const iconMenu = document.querySelector('.menu__icon');
 if(iconMenu){
