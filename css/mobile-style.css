@@ -20,7 +20,7 @@
         opacity: 0.8;
     }
     .menu__sub-list > li{
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
     .menu__sub-list{
         border: none;
@@ -76,6 +76,8 @@
     }
     .menu__list{
         width: 100%;
+        overflow: auto;
+        z-index: 3;
     }
     .menu__body._active{
         transform: translateY(0%);
@@ -116,6 +118,7 @@
         flex: 1 1 100%;
         margin: 10px 0px 0px 0px !important;
         display: none;
+        white-space: normal;
     }
     .menu__sub-link{
         font-size: 14px;
