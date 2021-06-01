@@ -36,8 +36,8 @@
           <nav class="menu__body">
             <ul class="menu__list">
               <li class="link_active"><a href="" class="menu__link">Главная</a></li>
-              <li>
-                <span class="menu__link drop__link">Инспекция</span>
+              <li class="drop__link">
+                <span class="menu__link">Инспекция</span>
                 <span class="menu__arrow"></span>
                 <ul class="menu__sub-list">
                   <li><a class="menu__sub-link" href="https://www.gov.spb.ru/gov/otrasl/inspek/information/">Об Инспекции</a></li>
@@ -63,8 +63,8 @@
                   <li><a class="menu__sub-link" href="index.php?option=com_xmap&sitemap=1&Itemid=169">Карта Сайта</a></li>
                 </ul>
               </li>
-              <li>
-                <span class="menu__link drop__link">Сервисы</span>
+              <li class="drop__link">
+                <span class="menu__link">Сервисы</span>
                 <span class="menu__arrow"></span>
                 <ul class="menu__sub-list">
                   <li><a class="menu__sub-link" href="index.php?option=com_content&view=article&id=101&Itemid=128">Картографические сервисы</a></li>
@@ -83,8 +83,8 @@
                   <li><a class="menu__sub-link" href="index.php?option=com_content&view=article&id=88&Itemid=140">Модуль формирования .PSP для AutoCad</a></li>
                 </ul>
               </li>
-              <li>
-                <span class="menu__link drop__link">Информирование</span>
+              <li class="drop__link">
+                <span class="menu__link">Информирование</span>
                 <span class="menu__arrow"></span>
                 <ul class="menu__sub-list">
                   <li><a class="menu__sub-link" href="index.php?option=com_quickfaq&view=category&cid=1&Itemid=114">Информация ГАТИ об ограничениях движения</a></li>
@@ -103,8 +103,8 @@
                   <li><a class="menu__sub-link" href="index.php?option=com_content&view=article&id=271&Itemid=199">Взаимодействие при присоединении к инженерным сетям</a></li>
                 </ul>
               </li>
-              <li>
-                <span class="menu__link drop__link">Гос. услуги</span>
+              <li class="drop__link">
+                <span class="menu__link">Гос. услуги</span>
                 <span class="menu__arrow"></span>
                 <ul class="menu__sub-list">
                   <li><a class="menu__sub-link" href="index.php?option=com_content&view=article&id=136&Itemid=157">Банк планируемых работ</a></li>
@@ -124,8 +124,8 @@
                   <li><a class="menu__sub-link" href="index.php?option=com_content&view=article&id=70&Itemid=64">Список распоряжений об ограничении движения</a></li>
                 </ul>
               </li>
-              <li>
-                <span class="menu__link drop__link">Контрольно-надзорная деятельность</span>
+              <li class="drop__link">
+                <span class="menu__link">Контрольно-надзорная деятельность</span>
                 <span class="menu__arrow"></span>
                 <ul class="menu__sub-list">
                   <li><a class="menu__sub-link" href="https://www.gov.spb.ru/gov/otrasl/inspek/kontrolno-nadzornaya-deyatelnost/">Контрольно-надзорная деятельность</a></li>
@@ -148,17 +148,15 @@
           </nav>
         </div>
         <div class="block__visual">
-          <a class="visually_impaired" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <div class="logo-visual">
-              <img src="./img/icons/eye-icon.png" class="visuall__logo"></img>
-              <span>для слабовидящих</span>
-            </div>
-          </a>
-          <div class="dropdown-menu dropdown-menu-right visual" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" onclick="zoompl();return false;">Увеличить текст</a>
-            <a class="dropdown-item" onclick="zoommn();return false;">Уменьшить текст</a>
-            <a class="dropdown-item" onclick="gray();return false;">Изменить контрастность</a>
-            <a class="dropdown-item" onclick="reset();return false;">Сбросить все</a>
+          <div class="logo-visual">
+            <img src="./img/icons/eye-icon-1.png" class="visuall__logo">
+            <span>для слабовидящих</span>
+            <ul class="menu__sub-list">
+              <li><a class="menu__sub-link" onclick="zoompl();return false;">Увеличить текст</a></li>
+              <li><a class="menu__sub-link" onclick="zoommn();return false;">Уменьшить текст</a></li>
+              <li><a class="menu__sub-link" onclick="gray();return false;">Изменить контрастность</a></li>
+              <li><a class="menu__sub-link" onclick="reset();return false;">Сбросить все</a></li>
+            </ul>
           </div>
         </div>
       </div>

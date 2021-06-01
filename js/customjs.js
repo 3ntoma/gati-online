@@ -51,7 +51,7 @@ $(document).ready(function(){
 	pauseOnFocus: false
   });
   window.onresize= function(){
-		if ($(window).width() < 768) {
+		if ($(window).width() < 1280) {
 			let full_height = Number($(window).height());
 			full_height += 200;
 			$('.menu__body')[0].style.height = String(full_height) + 'px';
@@ -137,7 +137,7 @@ const isMobile = {
 function mobileCheck(){
 	if(isMobile.any()){
 		
-		if ($(window).width() < 768) {
+		if ($(window).width() < 1280) {
 			let full_height = Number($(window).height());
 			full_height += 200;
 			$('.menu__body')[0].style.height = String(full_height) + 'px';
@@ -182,3 +182,24 @@ if(iconMenu){
 	});
 }
 
+
+
+$(".drop__link").hover(function (event){
+	event.preventDefault();
+	if(event.type == "mouseenter"){
+		event.delegateTarget.children[2].style.display = "block";	
+	}
+	if(event.type == "mouseleave"){
+		event.delegateTarget.children[2].style.display = "none";
+	}   
+});
+
+$(".logo-visual").hover(function (event){
+	event.preventDefault();
+	if(event.type == "mouseenter"){
+		event.delegateTarget.children[2].style.display = "block";	
+	}
+	if(event.type == "mouseleave"){
+		event.delegateTarget.children[2].style.display = "none";
+	}   
+});
