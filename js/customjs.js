@@ -55,6 +55,8 @@ $(document).ready(function(){
 			let full_height = Number($(window).height());
 			full_height += 200;
 			$('.menu__body')[0].style.height = String(full_height) + 'px';
+		}else{
+			$('.menu__body')[0].style.height = 'auto';
 		}
 		mobileCheck();
 	}
@@ -139,6 +141,8 @@ function mobileCheck(){
 			let full_height = Number($(window).height());
 			full_height += 200;
 			$('.menu__body')[0].style.height = String(full_height) + 'px';
+		}else{
+			$('.menu__body')[0].style.height = 'auto';
 		}
 
 		document.body.classList.add('_touch');
