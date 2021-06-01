@@ -74,6 +74,9 @@
         margin-left: 0;
         z-index: 2;
     }
+    .menu__list{
+        width: 100%;
+    }
     .menu__body._active{
         transform: translateY(0%);
     }
@@ -100,11 +103,11 @@
         display: block;
     }
     .menu__link{
-        font-size: 1.4rem;
+        font-size: 14px;
     }
     li._active .menu__link{
         transition: all 0.25s ease 0s;
-        font-size: 1.6rem;
+        font-size: 14px;
         font-weight: bold;
     }
     .menu__sub-list{
@@ -195,62 +198,6 @@
 	header.active {
         height: 100%;
         background: #fff;
-	}
-	.nav-link-incas {
-        width: 140px;
-        height: 44px;
-		position: relative;
-		z-index: 1500;
-	}
-	.nav {
-		position: relative;
-	}
-	.nav-link {
-        font-size: 16px;
-        font-weight: 500;
-		padding: 0 !important;
-		margin: auto 0;
-    }
-	.nav-list-larger {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 0;
-		height: 0;
-		display: block;
-		padding: 6rem 3rem;
-		z-index: 1000;
-		box-sizing: border-box;
-		opacity: 0;
-		visibility: hidden;
-        transition: opacity .3s;
-        overflow: auto;
-	}
-	.active .nav-link-bag {
-		opacity: 0;
-		transition: opacity .3s;
-	}
-	.active .nav-list-larger {
-		width: 100%;
-		height: 100vh;
-		opacity: 1;
-        visibility: visible;
-	}
-	.nav-list-larger .nav-item {
-		width: 100%;
-		justify-content: flex-start;
-		border-bottom: 1px solid #bababb;
-	}
-	.active .nav-list-larger .nav-item {
-		animation: fadeIn 1s ease-in;
-	}
-	@keyframes fadeIn {
-		from{
-			opacity: 0;
-		}
-		to{
-			opacity: 1;
-		}
 	}
     .img-map{
         height: 100%;
