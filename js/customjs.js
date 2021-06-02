@@ -50,9 +50,6 @@ $(document).ready(function(){
 	pauseOnHover: true,
 	pauseOnFocus: false
   });
-  window.onresize= function(){
-		mobileCheck();
-	}
 });
 
 
@@ -65,8 +62,8 @@ function zoompl(){
 	document.body.style.OTransform = "scale("+zoom+")";// для Opera
 	document.body.style.OTransformOrigin="0 0";// для Opera
 	document.body.style.zoom = zoom;
-	if (document.getElementsByTagName ('body')[0].className=='content-overflow') {document.getElementsByTagName ('body')[0].className='content-overflow';}
-	else {document.getElementsByTagName ('body')[0].className='content-overflow';}
+	if (document.getElementsByTagName ('html')[0].className=='content-overflow') {document.getElementsByTagName ('html')[0].className='content-overflow';}
+	else {document.getElementsByTagName ('html')[0].className='content-overflow';}
 	return false;
 }
 
@@ -95,8 +92,8 @@ function reset(){
 	document.body.style.OTransform = "scale("+zoom+")";// для Opera
 	document.body.style.OTransformOrigin="0 0";// для Opera
 	document.body.style.zoom = zoom;
-	if (document.getElementsByTagName ('body')[0].className=='content-overflow') {document.getElementsByTagName ('body')[0].className='';}
-	else {document.getElementsByTagName ('body')[0].className='';}
+	if (document.getElementsByTagName ('html')[0].className=='content-overflow') {document.getElementsByTagName ('html')[0].className='';}
+	else {document.getElementsByTagName ('html')[0].className='';}
 	return false;
 }
 
@@ -155,6 +152,9 @@ function mobileCheck(){
 	}
 }
 window.onload = mobileCheck();
+$(window).resize(function() {
+	mobileCheck();
+});
 
 const iconMenu = document.querySelector('.menu__icon');
 if(iconMenu){
