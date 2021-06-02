@@ -140,7 +140,7 @@ function mobileCheck(){
 				});
 			}
 		}
-		let menuDown = document.querySelectorAll('.drop__link');
+		let menuDown = document.querySelectorAll('.menu__link');
 			if(menuDown.length>0){
 				for (let index = 0; index < menuDown.length; index++) {
 					const menuArrow = menuDown[index];
