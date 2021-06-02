@@ -175,7 +175,7 @@ $(".drop__link").hover(function (event){
 		event.delegateTarget.children[2].style.display = "none";
 	}   
 });*/
-
+/*
 $(".logo-visual").hover(function (event){
 	event.preventDefault();
 	if(event.type == "mouseenter"){
@@ -184,4 +184,4 @@ $(".logo-visual").hover(function (event){
 	if(event.type == "mouseleave"){
 		event.delegateTarget.children[2].style.display = "none";
 	}   
-});
+});*/
