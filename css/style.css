@@ -81,6 +81,9 @@ main{
 }
 
 /*------------------BLOCK LOGO GATI------------*/
+.mob_logo{
+    display: none;
+}
 .block__logo{
     z-index: 9999;
 }
@@ -91,6 +94,7 @@ main{
 }
 /*------------- BLOCK VISUAL IMPAIRED ---------------*/
 .logo-visual{
+    position: relative;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -98,10 +102,6 @@ main{
     margin: 0;
     padding: 20px 0;
     max-height: 65px;
-}
-.logo-visual ul{
-    margin-top: 1px !important;
-    margin-right: 15px !important;
 }
 .logo-visual span{
     font-size: 14px;
@@ -122,7 +122,10 @@ main{
 .divider-new{
     border-bottom: 1px solid rgb(0,0,0,0.1);
 }
-
+.vis_text{
+    padding: 0 !important;
+    margin: 0 !important;
+}
 /*------------------------------- HEADER ----------------------------- */
 .header{
     position: fixed;
@@ -164,9 +167,6 @@ main{
     white-space: nowrap;
     margin: 0 10px;
     padding: 0 5px;
-}
-.menu__link:hover{
-    
 }
 a.menu__link:hover{
     color: black;
@@ -271,8 +271,11 @@ body._touch .menu__list > li._active .menu__sub-list {
     pointer-events: all;
     margin-bottom: 15px;
 }
+body._touch .menu__list > li._active .menu__sub-list li:first-child{
+    margin-top: 5px;
+}
 body._touch .menu__list > li._active .menu__sub-list li:last-child{
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 body._touch .menu__list > li._active .menu__arrow{
     transform: rotate(-180deg);
@@ -588,16 +591,16 @@ div.clearfix p{
 .banner_container .row{
     margin: 0;
 }
-.banimg{
-    max-width: 150px !important;
-    height: 70px !important;
-    border-radius: 8px;
-}
 .baners{
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin-right: 10px;
+    margin-left: 10px;
     filter: grayscale(100%);
     transition: all 0.3s ease 0s;
+}
+.banimg{
+    max-width: 140px !important;
+    height: 70px !important;
+    border-radius: 8px;
 }
 .baners:hover{
     filter: grayscale(0);
@@ -726,8 +729,9 @@ ul {
 
 /*------ hidden content -----*/
 .login__button{
+    display: flex;
+    position: relative;
     padding-top: 10px;
-    width: 100%;
 }
 .login__button a{
     background-color: white;
@@ -736,29 +740,28 @@ ul {
     padding: 5px 10px 5px 10px;
     text-align: center;
     color:  #8d8d94;
+    margin: 0 0 0 auto;
 }
 .login__button a:hover,
 .login__button a:focus{
     color: #8d8d94;
     text-decoration: underline;
 }
-.dropdown-menu.login__drop{
-    position: relative;
-    margin-top: -20rem;
-    margin-right: 1rem;
-}
 .login__drop{
+    position: absolute;
     border-radius: 5px !important;
 }
 .login__drop form{
     padding: 10px;
 }
 ._secret{
+    display: flex;
     padding-top: 5px;
     margin-top: 1rem;
 }
 ._secret a{
     color: ghostwhite;
+    margin: 0 0 0 auto;
 }
 .button{
     background-color: ghostwhite !important;

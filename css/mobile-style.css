@@ -34,11 +34,8 @@
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
     .menu__sub-list li:last-child{
+        border-bottom: 0;
         border-radius: 0px !important;
-    }
-    .menu__sub-list{
-        border: none;
-        box-shadow: none;
     }
     .menu__icon span,
     .menu__icon::before,
@@ -83,37 +80,39 @@
         width: 100%;
         height: 100vh;
         background: #fff;
-        padding: 100px 0 20px 0;
+        padding: 110px 0 20px 0;
         transition: all 0.5s ease 0.1s;
         overflow: auto;
         margin-left: 0;
         z-index: 2;
     }
+    .menu__body::-webkit-scrollbar{
+        display: none;
+    }
     .menu__list{
         width: 100%;
-        overflow: auto;
         z-index: 3;
     }
     .menu__body li{
-        padding: 0 30px 0 15px;
+        padding: 0 40px 0 20px;
     }
     .menu__body._active{
         transform: translateY(0%);
     }
-    .menu__body::before{
+    .header__container::before{
         content: "";
         position: fixed;
         width: 100%;
         top: 0;
         left: 0;
-        height: 70px;
+        height: 65px;
         background-color: rgba(255, 255, 255, 0.90);
         backdrop-filter: blur(1.25rem);
-        z-index: 2;
+        z-index: 4;
     }
     .menu__list > li{
         flex-wrap: wrap;
-        margin: 0px 0px 10px 0px;
+        margin: 0px 0px 15px 0px;
     }
     .menu__list > li:last-child{
         margin-bottom: 0;
@@ -130,13 +129,19 @@
         font-size: 14px;
         font-weight: bold;
     }
+    li._active .menu__sub-list{
+        background: #f5f5f7;
+        border-radius: 10px;
+    }
     .menu__sub-list{
         position: relative;
         background-color: #fff;
         flex: 1 1 100%;
-        margin: 10px 0px 0px 0px !important;
+        margin: 10px 10px !important;
         display: none;
         white-space: normal;
+        border: none;
+        box-shadow: none;
     }
     .menu__sub-link{
         font-size: 14px;
@@ -145,6 +150,9 @@
     }
     .news-column-item{
         margin: 20px 0;
+    }
+    .baners{
+        filter: grayscale(15%);
     }
 }
 /*----------------- ALL -------------------------*/
@@ -156,66 +164,6 @@
 	header .header-container {
 		padding: 0;
 	}
-	.nav-list-larger {
-		display: none;
-	}
-	.nav-list {
-        margin-top: 0;
-        margin: 0;
-	}
-	.nav-list-mobile {
-        display: flex;
-        max-width: 960px;
-    }
-    .nav-item-logo {
-        width: 140px;
-        height: 44px;
-		display: flex;
-		justify-content: center;
-	}
-	.nav-item {
-		width: 44px;
-		height: 44px;
-		display: flex;
-		justify-content: center;
-	}
-	.nav-item-hidden {
-		display: none;
-	}
-	.mobile-menu {
-		position: relative;
-		z-index: 1500;
-		width: 100%;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-        cursor: pointer;
-	}
-	.line {
-		position: absolute;
-		width: 1.3rem;
-		height: 2px;
-		background: #000;
-		transition: margin-top .3192s cubic-bezier (0.04,0.04,0.12,0.96);
-	}
-	.line-top {
-		margin-top: 4px;
-	}
-	.line-bottom {
-		margin-top: -0.1rem;
-	}
-	.active .line-top {
-		margin-top: 0;
-		transform: rotate(45deg);
-		transition: transform .3192s .1s cubic-bezier (0.04,0.04,0.12,0.96);
-	}
-	.active .line-bottom {
-	    margin-top: 0;
-	    transform: rotate(-45deg);
-	    transition: transform .3192s .1s cubic-bezier (0.04,0.04,0.12,0.96);
-	}
 	header.active {
         height: 100%;
         background: #fff;
@@ -225,9 +173,6 @@
     }
     .map-container{
         font-size: auto;
-    }
-    .baners{
-        filter: grayscale(15%);
     }
 }
 @media screen and (max-width: 1500px) {
@@ -239,6 +184,12 @@
     }
 }
 @media screen and (max-width: 767px){
+    .mob_logo{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
     .footer-bottom ._row{
         display: block;
     }
@@ -257,6 +208,10 @@
     }
     .top-map:first-child{
         margin-bottom: 3rem;
+    }
+    .menu__link{
+        margin: 0;
+        padding: 0 15px;
     }
 }
 @media screen and (max-width: 1840px){
