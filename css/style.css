@@ -397,14 +397,14 @@ body._touch .menu__list > li._active .menu__arrow{
 .sliderban_1 .slick-arrow{
     width: 48px;
     height: 48px;
-    top: calc(85%);
+    top: calc(10%);
 }
 .sliderban_1 .slick-prev{
-    left: 25px;
+    right: 65px;
     z-index: 2;
 }
 .sliderban_1 .slick-next{
-    left: 65px;
+    right: 25px;
     z-index: 2;
 }
 .slick-list{
@@ -565,6 +565,7 @@ img.btn-img{
     margin: 0 auto;
 }
 div.clearfix p{
+    padding: 0 5px;
     font-size: 16px;
     font-weight: 500;
 }
@@ -573,6 +574,12 @@ div.clearfix p{
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 5px 14px rgba(0,0,0,0.15), 0 5px 10px rgba(0,0,0,0.22);
+}
+.uslugi-btn:hover .uslugi_img_1{
+    background-color: #87cefa;
+}
+.uslugi-btn:focus .uslugi_img_1{
+    background-color: #3462f2;
 }
 
 /*---------------- BANNER ------------------*/
