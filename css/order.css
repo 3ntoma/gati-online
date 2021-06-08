@@ -1,0 +1,106 @@
+p{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.top_container{
+    max-width: 1840px;
+    margin: 0 auto;
+}
+.top_container div{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.top_head_text{
+    font-size: 24px;
+    font-weight: 600;
+}
+.order_container{
+    padding-top: 110px;
+}
+.order_container_white{
+    padding-top: 110px;
+    background: white;
+}
+.button_row{
+    padding: 55px 0 110px 0;
+}
+.button_row div{
+    display: flex;
+    justify-content: center;
+}
+.first_row{
+    max-width: 1830px;
+    margin: 0 auto;
+}
+.second_row{
+    max-width: 1830px;
+    margin: 0 auto;
+}
+.third_row{
+    max-width: 1830px;
+    margin: 0 auto;
+}
+.fourth_row{
+    max-width: 1830px;
+    margin: 0 auto;
+}
+.text-gosulugi{
+    margin: auto 0;
+}
+.text-gosulugi p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2;
+}
+.text-gosulugi span{
+    font-size: 24px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 55px;
+}
+.btn-gosuslugi{
+    background: -webkit-linear-gradient(90deg, rgb(37, 146, 235), rgb(88, 133, 237));
+    background: -moz-linear-gradient(90deg, rgb(37, 146, 235), rgb(88, 133, 237));
+    background: linear-gradient(90deg, rgb(37, 146, 235), rgb(88, 133, 237));
+    color: white;
+    width: 80%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 15px 5px;
+    border: 1px solid rgb(0,0,0,0.2);
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    -moz-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    transition: all 0.25s ease 0.1s;
+}
+.btn-gosuslugi:hover{
+    border: 1px solid black;
+    background: white;
+    color: black;
+}
+.btn-gosuslugi:focus{
+    border: 1px solid rgb(37, 146, 235);
+    background: white;
+    color: rgb(37, 146, 235);
+}
+.img-flex{
+    display: flex;
+    margin: auto 0;
+}
+.img-gosuslugi{
+    background: url("../img/images/logo_guspbru.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 70px;
+}
+.img-right{
+    background-position: right;
+}
+.img-left{
+    background-position: left;
+}
