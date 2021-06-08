@@ -154,6 +154,15 @@
     .baners{
         filter: grayscale(15%);
     }
+    .btn-gosuslugi{
+        margin: 10px 0;
+    }
+    .img-flex{
+        display: none;
+    }
+    .img-center{
+        display: block;
+    }
 }
 /*----------------- ALL -------------------------*/
 @media screen and (max-width: 960px) {
@@ -236,6 +245,26 @@
         margin-right: calc(max(22px, env(safe-area-inset-right)));
     }
     .footer-bottom-container{
+        margin-left: calc(max(22px, env(safe-area-inset-left)));
+        margin-right: calc(max(22px, env(safe-area-inset-right)));
+    }
+    .first_row{
+        margin-left: calc(max(22px, env(safe-area-inset-left)));
+        margin-right: calc(max(22px, env(safe-area-inset-right)));
+    }
+    .second_row{
+        margin-left: calc(max(22px, env(safe-area-inset-left)));
+        margin-right: calc(max(22px, env(safe-area-inset-right)));
+    }
+    .third_row{
+        margin-left: calc(max(22px, env(safe-area-inset-left)));
+        margin-right: calc(max(22px, env(safe-area-inset-right)));
+    }
+    .fourth_row{
+        margin-left: calc(max(22px, env(safe-area-inset-left)));
+        margin-right: calc(max(22px, env(safe-area-inset-right)));
+    }
+    .top_container div{
         margin-left: calc(max(22px, env(safe-area-inset-left)));
         margin-right: calc(max(22px, env(safe-area-inset-right)));
     }

@@ -12,6 +12,7 @@ p{
     margin: 0 auto;
 }
 .top_head_text{
+    text-align: center;
     font-size: 24px;
     font-weight: 600;
 }
@@ -23,26 +24,26 @@ p{
     background: white;
 }
 .button_row{
-    padding: 55px 0 110px 0;
+    padding: 0 0 110px 0;
 }
 .button_row div{
     display: flex;
     justify-content: center;
 }
 .first_row{
-    max-width: 1830px;
+    max-width: 1640px;
     margin: 0 auto;
 }
 .second_row{
-    max-width: 1830px;
+    max-width: 1640px;
     margin: 0 auto;
 }
 .third_row{
-    max-width: 1830px;
+    max-width: 1640px;
     margin: 0 auto;
 }
 .fourth_row{
-    max-width: 1830px;
+    max-width: 1640px;
     margin: 0 auto;
 }
 .text-gosulugi{
@@ -52,6 +53,9 @@ p{
     font-size: 18px;
     font-weight: 500;
     line-height: 2;
+}
+.text-gosulugi p{
+    padding-bottom: 55px !important;
 }
 .text-gosulugi span{
     font-size: 24px;
@@ -64,7 +68,7 @@ p{
     background: -moz-linear-gradient(90deg, rgb(37, 146, 235), rgb(88, 133, 237));
     background: linear-gradient(90deg, rgb(37, 146, 235), rgb(88, 133, 237));
     color: white;
-    width: 80%;
+    width: 90%;
     text-align: center;
     font-size: 16px;
     font-weight: 600;
@@ -96,11 +100,23 @@ p{
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
-    height: 70px;
+    height: 80px;
 }
 .img-right{
     background-position: right;
 }
 .img-left{
     background-position: left;
+}
+.img-gosuslugi-hidden{
+    background: url("../img/images/logo_guspbru.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 80px;
+}
+.img-center{
+    background-position: center;
+    margin: 0 15px 55px 15px;
+    display: none;
 }
