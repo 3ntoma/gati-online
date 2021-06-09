@@ -330,6 +330,7 @@ body._touch .menu__list > li._active .menu__arrow{
 }
 .slider{
     min-height: 303px !important;
+    cursor: pointer;
 }
 ._one{
     background: #2adfd6;
@@ -345,7 +346,7 @@ body._touch .menu__list > li._active .menu__arrow{
     position: absolute;
     color: #2f3132;
     width: 80%;
-    top: 40%;
+    top: 45%;
     left: 50%;
     -webkit-transform: translateY(-50%) translateX(-50%);
     -ms-transform: translateY(-50%) translateX(-50%);
