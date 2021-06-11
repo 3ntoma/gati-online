@@ -3,7 +3,7 @@
     .menu__list{
         display: flex;
         align-items: center;
-        line-height: 65px;
+        line-height: 70px;
     }
     .menu__sub-list{
         transform: translate(0px, 10%);
@@ -211,15 +211,15 @@
     .sup-img{
         display: none;
     }
-    .slide_two{
-        margin-top: 3rem;
+    .name_two{
+        margin-top: 60px;
     }
     .social-row{
         display: block;
         margin-left: 2rem;
     }
     .top-map:first-child{
-        margin-bottom: 3rem;
+        margin-bottom: 60px;
     }
     .menu__link{
         margin: 0;
