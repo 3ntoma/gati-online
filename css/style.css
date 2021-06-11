@@ -217,7 +217,7 @@ a.menu__link:hover{
     font-size: 14px;
 }
 .menu__sub-list li:hover{
-    background-color: #87cefa;
+    background-color: #3462f2;
     cursor: pointer;
 }
 .menu__sub-list li:hover a{
@@ -226,7 +226,6 @@ a.menu__link:hover{
 .menu__arrow{
     display: none;
 }
-
 /*-------------------------TOUCH/PC--------------------*/
 body._lock{
     overflow: hidden;
@@ -235,7 +234,7 @@ body._pc .menu__list > li:hover .menu__sub-list {
     opacity: 1;
     visibility: visible;
     transform: translate(0px, 0px);
-    pointer-events: all
+    pointer-events: all;
 }
 body._pc .logo-visual:hover .menu__sub-list {
     opacity: 1;
@@ -245,8 +244,11 @@ body._pc .logo-visual:hover .menu__sub-list {
 }
 body._pc .menu__list > li:hover .menu__link{
     border-bottom: 1px solid hsla(225, 88%, 58%, 0.6);
-    color: #3462f2;
-    cursor: progress;
+    color: hsl(225, 88%, 58%);
+    cursor: default;
+}
+body._pc .menu__list > li:hover .main_link{
+    cursor: pointer;
 }
 body._pc .menu__list > li .menu__link:focus{
     border-bottom: 1px solid hsla(225, 88%, 58%, 0.6);
@@ -592,7 +594,7 @@ div.clearfix p{
     box-shadow: 0 5px 14px rgba(0,0,0,0.15), 0 5px 10px rgba(0,0,0,0.22);
 }
 .uslugi-btn:hover .uslugi_img_1{
-    background-color: #87cefa;
+    background-color: #3462f2;
 }
 .uslugi-btn:focus .uslugi_img_1{
     background-color: #3462f2;

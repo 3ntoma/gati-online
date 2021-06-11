@@ -163,6 +163,9 @@
     .img-center{
         display: block;
     }
+    .btn-gosuslugi{
+        width: 90%;
+    }
 }
 /*----------------- ALL -------------------------*/
 @media screen and (max-width: 960px) {

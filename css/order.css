@@ -13,10 +13,11 @@ button{
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    padding-bottom: 55px;
 }
 .top_head_text{
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 600;
 }
 .order_container{
@@ -54,11 +55,8 @@ button{
     font-weight: 500;
     line-height: 2;
 }
-.text-gosulugi p{
+.text-gosulugi div p:last-child{
     padding-bottom: 55px !important;
-}
-.text-gosulugi div p:first-child{
-    padding-bottom: 0 !important;
 }
 .text-gosulugi span{
     font-size: 24px;
@@ -67,11 +65,11 @@ button{
     margin-bottom: 55px;
 }
 .btn-gosuslugi{
-    background: -webkit-linear-gradient(90deg, rgb(37, 146, 235), rgb(88, 133, 237));
-    background: -moz-linear-gradient(90deg, rgb(37, 146, 235), rgb(88, 133, 237));
-    background: linear-gradient(90deg, rgb(37, 146, 235), rgb(88, 133, 237));
+    background: -webkit-linear-gradient(90deg, #076BF7, #3464F2);
+    background: -moz-linear-gradient(90deg, #076BF7, #3464F2);
+    background: linear-gradient(90deg, #076BF7, #3464F2);
     color: white;
-    width: 90%;
+    width: 80%;
     text-align: center;
     font-size: 16px;
     font-weight: 600;
@@ -90,9 +88,6 @@ button{
     color: black;
 }
 .btn-gosuslugi:focus{
-    background: -webkit-linear-gradient(90deg, rgb(37, 146, 235), rgb(88, 133, 237));
-    background: -moz-linear-gradient(90deg, rgb(37, 146, 235), rgb(88, 133, 237));
-    background: linear-gradient(90deg, rgb(37, 146, 235), rgb(88, 133, 237));
     background: white;
     color: rgb(37, 146, 235);
 }
@@ -151,4 +146,17 @@ button{
     font-size: 16px;
     list-style: circle;
     list-style-position: inside;
+}
+.info_ul > li a{
+    color: #3464F2;
+}
+.info_ul_href:hover{
+    color: #3464F2;
+    border-bottom: 1px solid #3464F2;
+}
+.info_ul_href:focus{
+    color: #3464F2;
+    border-bottom: 1px solid #3464F2;
+    text-decoration: none;
+    font-weight: 600;
 }
